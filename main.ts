@@ -19,12 +19,13 @@ const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
 const PLAN = [
   'Plan: Build and sell micro-SaaS tools via AI-generated code.',
-  'Day 1: Use AI to scrape 500+ indie hacker pain points from Reddit/Twitter/forums; cluster into 20 niches.',
-  'Days 2-3: Build 3 minimal MVPs (one per top niche) as single-file tools: a CSV cleaner, a JSON→TypeScript converter, a regex tester. Deploy each to a $5/mo VPS with Stripe checkout.',
-  'Days 4-7: Cold-email 200 founders per niche with personalized 50-row samples from their public data; price at $29/mo.',
-  'Days 8-14: Automate onboarding with AI-written docs, FAQ, and email sequences. Reinforce winners: double ad spend on any tool hitting $100 MRR.',
-  'Days 15-30: Cross-sell bundle at $79/mo. Build affiliate program: 30% rev-share for promoters. Target $3k MRR by day 30.',
-  'Keep $40 for hosting/fees. Kill any tool below $20 MRR by day 10. No manual work: all code, copy, outreach, and support drafted by AI, human only approves deploys.',
+  'Day 1: Scrape 500+ indie hacker pain points from Reddit/Twitter/forums; cluster into 20 niches.',
+  'Days 2-3: Build 3 MVPs (one per top niche) as single-file tools: CSV cleaner, JSON→TS converter, regex tester. Deploy each to $5/mo VPS with Stripe.',
+  'Day 4: Launch 5 SEO landing pages with AI copy; submit to 10 directories.',
+  'Days 5-7: Cold-email 200 founders per niche with 50-row personalized samples; price at $29/mo.',
+  'Days 8-14: Automate onboarding with AI docs, FAQ, email sequences. Double ad spend on any tool hitting $100 MRR.',
+  'Days 15-30: Cross-sell bundle at $79/mo. Affiliate program: 30% rev-share. Target $3k MRR by day 30.',
+  'Keep $40 for hosting/fees. Kill tools below $20 MRR by day 10. Zero manual work: AI drafts all code, copy, outreach, support; human only approves deploys.',
 ].join('\n');
 
 writeFileSync(join(OUTPUT_DIR, 'entry.txt'), PLAN);
